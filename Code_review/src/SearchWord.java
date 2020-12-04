@@ -13,10 +13,10 @@ import java.util.Scanner;
 			String[] split = inputData.split(" ");
 			scan.close();
 	        
-	        String searchingWord = split[0];
-	        String fileInput = split[1];
+			String searchingWord = split[0];
+			String fileInput = split[1];
 	        
-	        SearchWord.getInput(searchingWord, fileInput);
+			SearchWord.getInput(searchingWord, fileInput);
 		}
 		
 		public static void getInput(String searchingWord, String fileInput) throws FileNotFoundException {
