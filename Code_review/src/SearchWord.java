@@ -7,12 +7,11 @@ import java.util.Scanner;
 	public class SearchWord {
 			
 		public static void main(String[] args) throws IOException {
-			
 			System.out.println("Enter the word to seach for and the file to search in: ");
 			Scanner scan = new Scanner(System.in);
-	        String inputData = scan.nextLine();
-	        String[] split = inputData.split(" ");
-	        scan.close();
+			String inputData = scan.nextLine();
+			String[] split = inputData.split(" ");
+			scan.close();
 	        
 	        String searchingWord = split[0];
 	        String fileInput = split[1];
