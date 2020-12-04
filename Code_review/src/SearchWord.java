@@ -21,17 +21,16 @@ import java.util.Scanner;
 		
 		public static void getInput(String searchingWord, String fileInput) throws FileNotFoundException {
 			int line = 1;
-
-	        File file = new File(fileInput);
+			File file = new File(fileInput);
 			Scanner sc = new Scanner(file);
 			
 				while(sc.hasNextLine()) {
 					String current = sc.nextLine();
-					if(current.contains(searchingWord)){
+					if(current.contains(searchingWord)) {
 						System.out.println("Found at line: "+ line);
 					}
 					line++;
 				}
 			sc.close();
 		}
-}
+	}
